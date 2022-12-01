@@ -13,3 +13,12 @@
 # Sort the left piece, aka call the recursive method on the left piece
 # Sort the right piece, aka call the recursive method on the right piece
 # Merge the two pieces in an ordered way
+
+my_array = [4, 5, 7, 1, 3, 6, 2]
+
+p my_array.take(my_array.length/2)
+
+def merge_sort(array)
+
+end
+
