@@ -12,7 +12,12 @@
 # Given an array divide that array in 2 pieces as even as possible
 # Sort the left piece, aka call the recursive method on the left piece
 # Sort the right piece, aka call the recursive method on the right piece
-# Merge the two pieces in an ordered way
+# Merge the two pieces in an ordered way:
+  # declare an empty array named 'sorted'
+  # compare the first element of the left piece to the first element of the right piece
+  # shift the smaller element and push it to 'sorted'
+  # if both left and right pieces are empty
+  # return cause merge is complete
 
 my_array = [4, 5, 7, 1, 3, 6, 2]
 
@@ -20,8 +25,6 @@ my_array = [4, 5, 7, 1, 3, 6, 2]
 def merge_sort(array)
   left_half = array.take(array.length/2)
   right_half = array.drop(array.length/2)
-  p left_half
-  p right_half
 end
 
 
