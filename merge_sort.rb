@@ -16,9 +16,13 @@
 
 my_array = [4, 5, 7, 1, 3, 6, 2]
 
-p my_array.take(my_array.length/2)
 
 def merge_sort(array)
-
+  left_half = array.take(array.length/2)
+  right_half = array.drop(array.length/2)
+  p left_half
+  p right_half
 end
 
+
+merge_sort(my_array)
