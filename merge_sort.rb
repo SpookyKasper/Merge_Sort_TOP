@@ -8,12 +8,12 @@ def merge(left, right, sorted=[])
   sorted
 end
 
-def merge_sort(array, sorted=[], round=0)
+def merge_sort(array, round=0)
   return array if array.length == 1
   left_half = array.take(array.length/2)
   right_half = array.drop(array.length/2)
-  s_left = merge_sort(left_half, sorted)
-  s_right = merge_sort(right_half, sorted)
+  s_left = merge_sort(left_half)
+  s_right = merge_sort(right_half)
   merge(s_left, s_right)
 end
 
